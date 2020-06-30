@@ -22,7 +22,7 @@ class MovieSite extends Document {
             content="https://static1.tvfplay.com/assets/images/favicon/ms-icon-144x144.png?v=2"
           />
           <meta name="theme-color" content="#fff"></meta>
-
+        
         </Head>
         <body>
           <Main /> 

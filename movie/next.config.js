@@ -19,6 +19,7 @@ module.exports = withSass({
   // --- NEXT CONFIG START ---
   publicRuntimeConfig: {
     API_URL: process.env.API_URL || "https://api.themoviedb.org/3/",
+    IMG_URL: process.env.IMG_URL || "https://image.tmdb.org/t/p/w500/",
     API_KEY: process.env.API_KEY || "0d1351921218f6d3a72ed8dc166061c9",
     ACCESS_TOCKEN: process.env.ACCESS_TOCKEN || "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZDEzNTE5MjEyMThmNmQzYTcyZWQ4ZGMxNjYwNjFjOSIsInN1YiI6IjVlZWVlN2U4ZDJiMjA5MDAzNGZmYjdkMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IakggtfpWM5z3o2Qa-8-FueVsPfjMrMRRgj4j6uuqOs"
   },

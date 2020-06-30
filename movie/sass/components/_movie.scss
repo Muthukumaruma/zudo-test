@@ -1,0 +1,88 @@
+@import '../imports.scss';
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    
+    .header{
+        margin-bottom: 20px;
+        &__genere{
+            font-weight: bold;
+        }
+        &__image{
+            width: 100px;
+        }
+        &__description{
+            color: #ccc;
+        }
+    }
+    .geners, .movie{
+        display: flex;
+        margin-top: 30px;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        &__card{
+            display: flex;
+            border-radius: 5px;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 150px;
+            max-width: 100%;
+            height: 150px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include shadow;
+            img{
+                width: 100px;
+            }
+        }
+        @media(max-width: 960px){
+            justify-content: center;
+        }
+    }
+    .movie{
+        &__card{
+            height: inherit;
+            padding: 10px;
+            min-width: 200px;
+            flex:1;
+            text-align: center;
+        }
+    }
+    .movie-detail{
+        margin-top: 30px;
+        text-align: center;
+        margin: auto;
+        &__image-wrapper{
+            @media(min-width: 961px){
+                width: 300px;
+            }
+            
+            @include aspect-ratio(1, 1.5)
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.page{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #eee;
+    &__container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+       align-items: center;
+    }
+
+    &__hide{
+        visibility: hidden;
+    }
+    &__center{
+        justify-content: center;
+    }
+}
