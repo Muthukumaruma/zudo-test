@@ -66,11 +66,17 @@
     }
 }
 .page{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: #eee;
+    position: absolute;
+    bottom: -81px;
+
+    @media(max-width:960px){
+        position: absolute;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #eee;
+    }
     &__container{
         @include container;
         display: flex;
