@@ -9,7 +9,7 @@ const Area = (props)=>{
         props.updateState(props.pageNo+1, false, movie)
     }
 
-    const getDetails = id => {
+    const getDetails = () => {
         
         NETWORK.get(`discover/movie/?with_genres=${parseInt(props.id)}`).then((res=>{
           
