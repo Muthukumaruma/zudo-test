@@ -14,7 +14,9 @@ const Page = props=>{
                 <div className={"page__container " + (props.pageNo === 3 ? 'hide' : "")}>
                     <div className={"page__next pointer " + (props.pageNo === 1 ? 'page__hide' : "")} onClick={(e)=>{paginate('back')}}>BACK</div>
                     <div className="page__indigator">
-                        
+                        <div className={"page__indigator-dot " + (props.pageNo === 1 ? "active" : "")} ></div>
+                        <div className={"page__indigator-dot " + (props.pageNo === 2 ? "active" : "")}></div>
+                        <div className={"page__indigator-dot " + (props.pageNo === 3 ? "active" : "")}></div>
                     </div>
                     <div className={"page__previous pointer " + ( props.pageNo === 3 ? 'page__hide' : "") } onClick={(e)=>{paginate('next')}}>NEXT</div>
                 </div> 

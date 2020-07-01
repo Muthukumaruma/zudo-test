@@ -85,4 +85,17 @@
     &__center{
         justify-content: center;
     }
+    &__indigator{
+        display: flex;
+        &-dot{
+            padding: 3px;
+            background: #ccc;
+            width: 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            &.active{
+                background-color: #24292e;
+            }
+        }
+    }
 }
