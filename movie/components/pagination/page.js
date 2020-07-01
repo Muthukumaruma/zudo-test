@@ -5,7 +5,9 @@ const Page = props=>{
         if(val==="back"){
             props.updateState(props.pageNo-1)
         }else{
-            props.updateState(props.pageNo+1, props.geners[0].id, false, props.geners[0].name)
+            let generId = props.details.selectedGenerID ? props.details.selectedGenerID: props.geners[0].id;
+            let generName = props.details.genereTitle !== "" ? props.details.genereTitle : props.geners[0].name;
+            props.updateState(props.pageNo+1, generId, false, generName)
         }
     }
     return(
