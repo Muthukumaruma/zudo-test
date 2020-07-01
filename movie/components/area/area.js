@@ -18,12 +18,13 @@ const Area = (props)=>{
         }))
 
     }
+
     
     useEffect(()=>{ //fetch data only once untill click the gener
-        props.id && props.pageNo ==2 && !loaded && getDetails();
+        props.id && props.pageNo ===2 && !loaded && getDetails();
     },[props.id ])
     
-    if(props.pageNo ==2){
+    if(props.pageNo ===2){
         return(
             <>
             {loaded?(
