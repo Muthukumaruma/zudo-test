@@ -10,6 +10,7 @@ const Area = (props)=>{
     }
 
     const getDetails = id => {
+        
         NETWORK.get(`discover/movie/?with_genres=${parseInt(props.id)}`).then((res=>{
           
             setmovies(res.data.results)
@@ -21,7 +22,9 @@ const Area = (props)=>{
 
     
     useEffect(()=>{ //fetch data only once untill click the gener
-        props.id && props.pageNo ===2 && !loaded && getDetails();
+        props.id && props.pageNo ===2  && setloaded(false)
+        props.id && props.pageNo ===2  && getDetails();
+
     },[props.id ])
     
     if(props.pageNo ===2){
