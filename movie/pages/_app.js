@@ -20,7 +20,7 @@ class MovieApp extends App {
 
       NETWORK.defaults.headers.common["cookie"] = ctx.req.headers.cookie
       ? ctx.req.headers.cookie
-      : ""; //set the browser cooke from server 
+      : ""; //send the browser cooke to the server 
       
       if(!process.browser){
         pageProps.metaData = ctx.req.metaData ? ctx.req.metaData : {};
