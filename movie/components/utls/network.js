@@ -26,6 +26,13 @@ NETWORK.interceptors.request.use(
 
 );
 
+const apiList = ()=>{
+  return{
+    "genre/movie/list":"LIST_API",
+    "discover/movie/":"MOVIE_API",
+  }
+}
+
 NETWORK.interceptors.response.use(
   function(response) {
     return response;
@@ -36,6 +43,7 @@ NETWORK.interceptors.response.use(
       let errors = Object.keys(apiList()).filter(function(a) {
         return (error.config.url.indexOf(a) !== -1)
       });
+      console.log(errors)
 
     } catch (error) {
 
