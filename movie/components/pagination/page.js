@@ -24,7 +24,7 @@ const Page = props=>{
                 </div> 
 
                 <div className={"page__container page__center " + (props.pageNo !== 3 ? 'hide' : '')}>
-                    <div className="poinnter" onClick={()=>{props.updateState(1)}}>TRY AGAIN</div>
+                    <div className="pointer" onClick={()=>{props.updateState(1)}}>TRY AGAIN</div>
                 </div>        
             </div>
         </>
