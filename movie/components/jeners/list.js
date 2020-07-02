@@ -10,7 +10,7 @@ const GenereList = (props)=>{
         <>
         {props.pageNo ==1?(
           <div className="geners">
-            {props.geners.length>0 && props.geners.map((genere, index)=>(
+            {props.geners && props.geners.map((genere, index)=>(
                 <div className="geners__card pointer" key ={index} onClick={()=>{genereDetail(genere)}}>
                     <img src="./images/cinima.jpeg" alt="movie" />
                     {genere.name}
