@@ -71,14 +71,12 @@
 }
 .page{
     position: absolute;
-    bottom: 60px;
-
-    @media(max-width:960px){
-        position: absolute;
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    @media(max-width:960px){ 
         background-color: #eee;
     }
     &__container{
